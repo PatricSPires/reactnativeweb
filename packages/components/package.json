@@ -10,5 +10,11 @@
     "@types/react-native": "*",
     "react": "*",
     "react-native": "*"
+  },
+  "dependencies": {
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.7"
   }
 }
