@@ -1,6 +1,6 @@
-import React from 'react';
-import { ButtonProps } from './types';
-import { ButtonComponent, TextComponent } from './styles';
+import React from 'react'
+import { ButtonProps } from './types'
+import { ButtonComponent, TextComponent } from './styles'
 
 const Button = ({
   onPress,
@@ -33,12 +33,12 @@ const Button = ({
         </>
       )}
     </ButtonComponent>
-)};
-
+  )
+}
 
 Button.defaultProps = {
   appearance: 'primary',
-  marginBottom: 3
-};
+  marginBottom: 3,
+}
 
-export default Button;
+export default Button

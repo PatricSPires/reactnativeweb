@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltip Test should render the Tooltip 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c3 {
+  visibility: hidden;
+  width: 120px;
+  background-color: #161616;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -220%;
+  left: 68%;
+  margin-left: -60px;
+}
+
+.c3::after {
+  content: '';
+  position: absolute;
+  bottom: -38%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #161616 transparent;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 svg {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+}
+
+.c0:hover .c2 {
+  visibility: visible;
+}
+
+<div
+  className="c0 sc-gtssRu c0 css-view-1dbjc4n"
+>
+  <svg
+    aria-hidden="true"
+    className="c1"
+    fill="none"
+    focusable="false"
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx={12}
+      cy={12}
+      r={10}
+    />
+    <line
+      x1={12}
+      x2={12}
+      y1={8}
+      y2={12}
+    />
+    <line
+      x1={12}
+      x2={12.01}
+      y1={16}
+      y2={16}
+    />
+  </svg>
+  <div
+    className="c2 c3 c2 c3 css-text-901oao"
+    dir="auto"
+  >
+    Hello World
+  </div>
+</div>
+`;

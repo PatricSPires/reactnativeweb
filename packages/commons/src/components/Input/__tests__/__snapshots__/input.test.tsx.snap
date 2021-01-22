@@ -1,0 +1,857 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Test should render the Input 1`] = `
+.c0 {
+  width: 100%;
+}
+
+.c1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #161616;
+  border-bottom: 1px solid #8d8d8d;
+}
+
+.c1:focus-within {
+  outline: 2px solid #ffffff;
+  border-bottom-color: transparent;
+}
+
+.c2 {
+  width: 100%;
+  height: 40px;
+  color: #919191;
+  font-weight: normal;
+  line-height: 18px;
+  outline: transparent;
+  font-size: 14px;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  padding: 0 0 0 10px;
+}
+
+.c2:disabled {
+  outline: none;
+  border: none;
+  color: #919191;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #919191;
+}
+
+.c2::-moz-placeholder {
+  color: #919191;
+}
+
+.c2:-ms-input-placeholder {
+  color: #919191;
+}
+
+.c2::placeholder {
+  color: #919191;
+}
+
+.c2:focus-within {
+  color: #919191;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+  data-testid="wrapper"
+>
+  <div
+    className="c1 sc-gtssRu c1 css-view-1dbjc4n"
+  >
+    <input
+      autoCapitalize="sentences"
+      autoComplete="on"
+      autoCorrect="on"
+      className="c2 css-textinput-1cwyjr8"
+      data-focusable={true}
+      dir="auto"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyPress={[Function]}
+      onSelect={[Function]}
+      readOnly={false}
+      spellCheck={true}
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input Test should render the Input whith helper text 1`] = `
+.c0 {
+  width: 100%;
+}
+
+.c2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #161616;
+  border-bottom: 1px solid #8d8d8d;
+}
+
+.c2:focus-within {
+  outline: 2px solid #ffffff;
+  border-bottom-color: transparent;
+}
+
+.c3 {
+  width: 100%;
+  height: 40px;
+  color: #919191;
+  font-weight: normal;
+  line-height: 18px;
+  outline: transparent;
+  font-size: 14px;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  padding: 0 0 0 10px;
+}
+
+.c3:disabled {
+  outline: none;
+  border: none;
+  color: #919191;
+}
+
+.c3::-webkit-input-placeholder {
+  color: #919191;
+}
+
+.c3::-moz-placeholder {
+  color: #919191;
+}
+
+.c3:-ms-input-placeholder {
+  color: #919191;
+}
+
+.c3::placeholder {
+  color: #919191;
+}
+
+.c3:focus-within {
+  color: #919191;
+}
+
+.c1 {
+  font-size: 12px;
+  color: #8d8d8d;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+  data-testid="wrapper"
+>
+  <div
+    className="c1 sc-hKFyIo c1 css-text-901oao"
+    dir="auto"
+  >
+    Hello World
+  </div>
+  <div
+    className="c2 sc-gtssRu c2 css-view-1dbjc4n"
+  >
+    <input
+      autoCapitalize="sentences"
+      autoComplete="on"
+      autoCorrect="on"
+      className="c3 css-textinput-1cwyjr8"
+      data-focusable={true}
+      dir="auto"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyPress={[Function]}
+      onSelect={[Function]}
+      readOnly={false}
+      spellCheck={true}
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input Test should render the Input whith label 1`] = `
+.c0 {
+  width: 100%;
+}
+
+.c1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #161616;
+  border-bottom: 1px solid #8d8d8d;
+}
+
+.c1:focus-within {
+  outline: 2px solid #ffffff;
+  border-bottom-color: transparent;
+}
+
+.c2 {
+  width: 100%;
+  height: 40px;
+  color: #919191;
+  font-weight: normal;
+  line-height: 18px;
+  outline: transparent;
+  font-size: 14px;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  padding: 0 0 0 10px;
+}
+
+.c2:disabled {
+  outline: none;
+  border: none;
+  color: #919191;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #919191;
+}
+
+.c2::-moz-placeholder {
+  color: #919191;
+}
+
+.c2:-ms-input-placeholder {
+  color: #919191;
+}
+
+.c2::placeholder {
+  color: #919191;
+}
+
+.c2:focus-within {
+  color: #919191;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+  data-testid="wrapper"
+>
+  <div
+    className="c1 sc-gtssRu c1 css-view-1dbjc4n"
+  >
+    <input
+      autoCapitalize="sentences"
+      autoComplete="on"
+      autoCorrect="on"
+      className="c2 css-textinput-1cwyjr8"
+      data-focusable={true}
+      dir="auto"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyPress={[Function]}
+      onSelect={[Function]}
+      readOnly={false}
+      spellCheck={true}
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input Test should render the Input with is invalid 1`] = `
+.c0 {
+  width: 100%;
+}
+
+.c1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #161616;
+  border-bottom: 1px solid #8d8d8d;
+  outline: 2px solid #DA1E28;
+  border: none;
+}
+
+.c1:focus-within {
+  outline: 2px solid #DA1E28;
+  border-bottom-color: transparent;
+}
+
+.c2 {
+  width: 100%;
+  height: 40px;
+  color: #919191;
+  font-weight: normal;
+  line-height: 18px;
+  outline: transparent;
+  font-size: 14px;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  padding: 0 0 0 10px;
+}
+
+.c2:disabled {
+  outline: none;
+  border: none;
+  color: #919191;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #919191;
+}
+
+.c2::-moz-placeholder {
+  color: #919191;
+}
+
+.c2:-ms-input-placeholder {
+  color: #919191;
+}
+
+.c2::placeholder {
+  color: #919191;
+}
+
+.c2:focus-within {
+  color: #919191;
+}
+
+.c3 {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  color: #ffffff;
+  margin: 0 10px;
+}
+
+.c3 svg {
+  width: 16px;
+  color: #DA1E28;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+  data-testid="wrapper"
+>
+  <div
+    className="c1 sc-gtssRu c1 css-view-1dbjc4n"
+  >
+    <input
+      autoCapitalize="sentences"
+      autoComplete="on"
+      autoCorrect="on"
+      className="c2 css-textinput-1cwyjr8"
+      data-focusable={true}
+      dir="auto"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyPress={[Function]}
+      onSelect={[Function]}
+      readOnly={false}
+      spellCheck={true}
+      type="text"
+    />
+    <div
+      className="c3 sc-jSFkmK c3 css-view-1dbjc4n"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input Test should render the Input with passwordField false 1`] = `
+.c0 {
+  width: 100%;
+}
+
+.c1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #161616;
+  border-bottom: 1px solid #8d8d8d;
+  outline: 2px solid #DA1E28;
+  border: none;
+}
+
+.c1:focus-within {
+  outline: 2px solid #DA1E28;
+  border-bottom-color: transparent;
+}
+
+.c2 {
+  width: 100%;
+  height: 40px;
+  color: #919191;
+  font-weight: normal;
+  line-height: 18px;
+  outline: transparent;
+  font-size: 14px;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  padding: 0 0 0 10px;
+}
+
+.c2:disabled {
+  outline: none;
+  border: none;
+  color: #919191;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #919191;
+}
+
+.c2::-moz-placeholder {
+  color: #919191;
+}
+
+.c2:-ms-input-placeholder {
+  color: #919191;
+}
+
+.c2::placeholder {
+  color: #919191;
+}
+
+.c2:focus-within {
+  color: #919191;
+}
+
+.c3 {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  color: #ffffff;
+  margin: 0 10px;
+}
+
+.c3 svg {
+  width: 16px;
+  color: #DA1E28;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+  data-testid="wrapper"
+>
+  <div
+    className="c1 sc-gtssRu c1 css-view-1dbjc4n"
+  >
+    <input
+      autoCapitalize="sentences"
+      autoComplete="on"
+      autoCorrect="on"
+      className="c2 css-textinput-1cwyjr8"
+      data-focusable={true}
+      dir="auto"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyPress={[Function]}
+      onSelect={[Function]}
+      readOnly={false}
+      spellCheck={true}
+      type="text"
+    />
+    <div
+      className="c3 sc-jSFkmK c3 css-view-1dbjc4n"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input Test should render the Input with passwordField true 1`] = `
+.c4 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c0 {
+  width: 100%;
+}
+
+.c1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #161616;
+  border-bottom: 1px solid #8d8d8d;
+}
+
+.c1:focus-within {
+  outline: 2px solid #ffffff;
+  border-bottom-color: transparent;
+}
+
+.c2 {
+  width: 100%;
+  height: 40px;
+  color: #919191;
+  font-weight: normal;
+  line-height: 18px;
+  outline: transparent;
+  font-size: 14px;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  padding: 0 0 0 10px;
+}
+
+.c2:disabled {
+  outline: none;
+  border: none;
+  color: #919191;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #919191;
+}
+
+.c2::-moz-placeholder {
+  color: #919191;
+}
+
+.c2:-ms-input-placeholder {
+  color: #919191;
+}
+
+.c2::placeholder {
+  color: #919191;
+}
+
+.c2:focus-within {
+  color: #919191;
+}
+
+.c3 {
+  width: 16px;
+  height: 16px;
+  color: #919191;
+  margin: 0 10px;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+  data-testid="wrapper"
+>
+  <div
+    className="c1 sc-gtssRu c1 css-view-1dbjc4n"
+  >
+    <input
+      autoCapitalize="sentences"
+      autoComplete="on"
+      autoCorrect="on"
+      className="c2 css-textinput-1cwyjr8"
+      data-focusable={true}
+      dir="auto"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyPress={[Function]}
+      onSelect={[Function]}
+      readOnly={false}
+      spellCheck={true}
+      type="password"
+    />
+    <div
+      className="c3 sc-gKAblj c3 css-view-1dbjc4n r-cursor-1loqt21 r-touchAction-1otgn73"
+      data-focusable={true}
+      data-testid="passwordIconWrapper"
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      tabIndex="0"
+    >
+      <svg
+        aria-hidden="true"
+        className="c4"
+        fill="none"
+        focusable="false"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19m-6.72-1.07a3 3 0 11-4.24-4.24"
+        />
+        <line
+          x1={1}
+          x2={23}
+          y1={1}
+          y2={23}
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input Test with dark theme should render the Input 1`] = `
+.c0 {
+  width: 100%;
+}
+
+.c1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #161616;
+  border-bottom: 1px solid #8d8d8d;
+}
+
+.c1:focus-within {
+  outline: 2px solid #ffffff;
+  border-bottom-color: transparent;
+}
+
+.c2 {
+  width: 100%;
+  height: 40px;
+  color: #919191;
+  font-weight: normal;
+  line-height: 18px;
+  outline: transparent;
+  font-size: 14px;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  padding: 0 0 0 10px;
+}
+
+.c2:disabled {
+  outline: none;
+  border: none;
+  color: #919191;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #919191;
+}
+
+.c2::-moz-placeholder {
+  color: #919191;
+}
+
+.c2:-ms-input-placeholder {
+  color: #919191;
+}
+
+.c2::placeholder {
+  color: #919191;
+}
+
+.c2:focus-within {
+  color: #919191;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+  data-testid="wrapper"
+>
+  <div
+    className="c1 sc-gtssRu c1 css-view-1dbjc4n"
+  >
+    <input
+      autoCapitalize="sentences"
+      autoComplete="on"
+      autoCorrect="on"
+      className="c2 css-textinput-1cwyjr8"
+      data-focusable={true}
+      dir="auto"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyPress={[Function]}
+      onSelect={[Function]}
+      readOnly={false}
+      spellCheck={true}
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input Test with light theme should render the Input 1`] = `
+.c0 {
+  width: 100%;
+}
+
+.c1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #8d8d8d;
+}
+
+.c1:focus-within {
+  outline: 2px solid #ffffff;
+  border-bottom-color: transparent;
+}
+
+.c2 {
+  width: 100%;
+  height: 40px;
+  color: #919191;
+  font-weight: normal;
+  line-height: 18px;
+  outline: transparent;
+  font-size: 14px;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  padding: 0 0 0 10px;
+}
+
+.c2:disabled {
+  outline: none;
+  border: none;
+  color: #919191;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #919191;
+}
+
+.c2::-moz-placeholder {
+  color: #919191;
+}
+
+.c2:-ms-input-placeholder {
+  color: #919191;
+}
+
+.c2::placeholder {
+  color: #919191;
+}
+
+.c2:focus-within {
+  color: #919191;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+  data-testid="wrapper"
+>
+  <div
+    className="c1 sc-gtssRu c1 css-view-1dbjc4n"
+  >
+    <input
+      autoCapitalize="sentences"
+      autoComplete="on"
+      autoCorrect="on"
+      className="c2 css-textinput-1cwyjr8"
+      data-focusable={true}
+      dir="auto"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyPress={[Function]}
+      onSelect={[Function]}
+      readOnly={false}
+      spellCheck={true}
+      type="text"
+    />
+  </div>
+</div>
+`;

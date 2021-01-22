@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckBoxCheck > Style should render the CheckBoxCheck with checked false and disabled true 1`] = `
+.c0 {
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 2px;
+  background-size: 6px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+<div
+  aria-disabled={true}
+  className="c0 sc-gtssRu c0 css-view-1dbjc4n"
+  disabled={true}
+/>
+`;
+
+exports[`CheckBoxCheck > Style should render the CheckBoxCheck with checked true and disabled false 1`] = `
+.c0 {
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 2px;
+  background-size: 6px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+<div
+  className="c0 sc-gtssRu c0 css-view-1dbjc4n"
+  disabled={false}
+/>
+`;
+
+exports[`CheckBoxCheck > Style should render the CheckBoxCheck with checked true and disabled true 1`] = `
+.c0 {
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 2px;
+  background-size: 6px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #161616;
+}
+
+<div
+  aria-disabled={true}
+  className="c0 sc-gtssRu c0 css-view-1dbjc4n"
+  disabled={true}
+/>
+`;
+
+exports[`CheckBoxText > Style should render the CheckBoxText with disabled true 1`] = `
+.c0 {
+  margin-left: 8px;
+  color: #e0e0e0;
+}
+
+<div
+  aria-disabled={true}
+  className="c0 sc-dlnjPT c0 css-text-901oao"
+  dir="auto"
+  disabled={true}
+/>
+`;
+
+exports[`CheckBoxWrapper > Style should render the CheckBoxWrapper with checked false and disabled true 1`] = `
+.c0 {
+  width: 15px;
+  height: 15px;
+  border: 2px solid;
+  border-color: #161616;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-color: #e0e0e0;
+  background-color: transparent;
+}
+
+.c0 img {
+  width: 15px;
+  height: 15px;
+}
+
+<div
+  aria-disabled={true}
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+  disabled={true}
+/>
+`;
+
+exports[`CheckBoxWrapper > Style should render the CheckBoxWrapper with checked true and disabled false 1`] = `
+.c0 {
+  width: 15px;
+  height: 15px;
+  border: 2px solid;
+  border-color: #161616;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #161616;
+}
+
+.c0 img {
+  width: 15px;
+  height: 15px;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+  disabled={false}
+/>
+`;
+
+exports[`CheckBoxWrapper > Style should render the CheckBoxWrapper with checked true and disabled true 1`] = `
+.c0 {
+  width: 15px;
+  height: 15px;
+  border: 2px solid;
+  border-color: #161616;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0 img {
+  width: 15px;
+  height: 15px;
+}
+
+<div
+  aria-disabled={true}
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+  disabled={true}
+/>
+`;
+
+exports[`Container > Style should render the Container with checked true and disabled false 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c0:focus .sc-bdnylx {
+  box-shadow: 0px 0px 0px 1px #0043CE;
+  box-shadow: 0px 0px 0px 1px #0043CE;
+}
+
+<div
+  className="c0 sc-hKFyIo c0 css-view-1dbjc4n r-cursor-1loqt21 r-touchAction-1otgn73"
+  data-focusable={true}
+  disabled={false}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  tabIndex="0"
+/>
+`;

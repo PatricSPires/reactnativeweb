@@ -1,0 +1,684 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormGroup Test should render the FormGroup 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.c0 Tag {
+  margin: 8px 0 4px 0;
+}
+
+.c1 {
+  font-size: .75rem;
+  color: #DA1E28;
+  margin-top: 8px;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+>
+  <input
+    active={false}
+    isInvalid={true}
+    name="FormGroup"
+    onBlur={[Function]}
+  />
+  <div
+    className="c1 sc-hKFyIo c1 css-text-901oao"
+    dir="auto"
+  >
+    Error message
+  </div>
+</div>
+`;
+
+exports[`FormGroup Test should render the FormGroup with helper text 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.c0 Tag {
+  margin: 8px 0 4px 0;
+}
+
+.c1 {
+  font-size: .75rem;
+  color: #8d8d8d;
+}
+
+.c2 {
+  font-size: .75rem;
+  color: #DA1E28;
+  margin-top: 8px;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+>
+  <div
+    className="c1 sc-dlnjPT c1 css-text-901oao"
+    dir="auto"
+  >
+    Hello World
+  </div>
+  <input
+    active={false}
+    isInvalid={true}
+    name="FormGroup"
+    onBlur={[Function]}
+  />
+  <div
+    className="c2 sc-hKFyIo c2 css-text-901oao"
+    dir="auto"
+  >
+    Error message
+  </div>
+</div>
+`;
+
+exports[`FormGroup Test should render the FormGroup with isInvalid false 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.c0 Tag {
+  margin: 8px 0 4px 0;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+>
+  <input
+    active={false}
+    isInvalid={false}
+    name="FormGroup"
+    onBlur={[Function]}
+  />
+</div>
+`;
+
+exports[`FormGroup Test should render the FormGroup with isInvalid true 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.c0 Tag {
+  margin: 8px 0 4px 0;
+}
+
+.c1 {
+  font-size: .75rem;
+  color: #DA1E28;
+  margin-top: 8px;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+>
+  <input
+    active={false}
+    isInvalid={true}
+    name="FormGroup"
+    onBlur={[Function]}
+  />
+  <div
+    className="c1 sc-hKFyIo c1 css-text-901oao"
+    dir="auto"
+  >
+    Error message
+  </div>
+</div>
+`;
+
+exports[`FormGroup Test should render the FormGroup with isValid true 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.c0 Tag {
+  margin: 8px 0 4px 0;
+}
+
+.c1 {
+  font-size: .75rem;
+  color: #DA1E28;
+  margin-top: 8px;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+>
+  <input
+    active={false}
+    isInvalid={true}
+    isValid={true}
+    name="FormGroup"
+    onBlur={[Function]}
+  />
+  <div
+    className="c1 sc-hKFyIo c1 css-text-901oao"
+    dir="auto"
+  >
+    Error message
+  </div>
+</div>
+`;
+
+exports[`FormGroup Test should render the FormGroup with label and dark theme 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.c0 Tag {
+  margin: 8px 0 4px 0;
+}
+
+.c1 {
+  color: #919191;
+  font-size: .75rem;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  font-size: .75rem;
+  color: #DA1E28;
+  margin-top: 8px;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+>
+  <div
+    className="c1 sc-gtssRu c1 css-text-901oao"
+    dir="auto"
+  >
+    Hello World
+  </div>
+  <input
+    active={false}
+    isInvalid={true}
+    name="FormGroup"
+    onBlur={[Function]}
+  />
+  <div
+    className="c2 sc-hKFyIo c2 css-text-901oao"
+    dir="auto"
+  >
+    Error message
+  </div>
+</div>
+`;
+
+exports[`FormGroup Test should render the FormGroup with label light theme 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.c0 Tag {
+  margin: 8px 0 4px 0;
+}
+
+.c1 {
+  color: #919191;
+  font-size: .75rem;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  font-size: .75rem;
+  color: #DA1E28;
+  margin-top: 8px;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+>
+  <div
+    className="c1 sc-gtssRu c1 css-text-901oao"
+    dir="auto"
+  >
+    Hello World
+  </div>
+  <input
+    active={false}
+    isInvalid={true}
+    name="FormGroup"
+    onBlur={[Function]}
+  />
+  <div
+    className="c2 sc-hKFyIo c2 css-text-901oao"
+    dir="auto"
+  >
+    Error message
+  </div>
+</div>
+`;
+
+exports[`FormGroup Test should render the FormGroup with labelHint with dark theme 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.c0 Tag {
+  margin: 8px 0 4px 0;
+}
+
+.c1 {
+  color: #919191;
+  font-size: .75rem;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  font-size: .75rem;
+  color: #DA1E28;
+  margin-top: 8px;
+}
+
+.c3 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c5 {
+  visibility: hidden;
+  width: 120px;
+  background-color: #161616;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -220%;
+  left: 68%;
+  margin-left: -60px;
+}
+
+.c5::after {
+  content: '';
+  position: absolute;
+  bottom: -38%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #161616 transparent;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.c2 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 svg {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+}
+
+.c2:hover .c4 {
+  visibility: visible;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+>
+  <div
+    className="c1 sc-gtssRu c1 css-text-901oao"
+    dir="auto"
+  >
+    Hello World
+    <div
+      className="c2 sc-jSFkmK c2 css-view-1dbjc4n r-display-xoduu5"
+    >
+      <svg
+        aria-hidden="true"
+        className="c3"
+        fill="none"
+        focusable="false"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx={12}
+          cy={12}
+          r={10}
+        />
+        <line
+          x1={12}
+          x2={12}
+          y1={8}
+          y2={12}
+        />
+        <line
+          x1={12}
+          x2={12.01}
+          y1={16}
+          y2={16}
+        />
+      </svg>
+      <span
+        className="c4 c5 c4 c5 css-text-901oao css-textHasAncestor-16my406"
+        dir="auto"
+      >
+        Helo FormGroup
+      </span>
+    </div>
+  </div>
+  <input
+    active={false}
+    isInvalid={true}
+    name="FormGroup"
+    onBlur={[Function]}
+  />
+  <div
+    className="c6 sc-hKFyIo c6 css-text-901oao"
+    dir="auto"
+  >
+    Error message
+  </div>
+</div>
+`;
+
+exports[`FormGroup Test should render the FormGroup with labelHint with light theme 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.c0 Tag {
+  margin: 8px 0 4px 0;
+}
+
+.c1 {
+  color: #919191;
+  font-size: .75rem;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  font-size: .75rem;
+  color: #DA1E28;
+  margin-top: 8px;
+}
+
+.c3 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c5 {
+  visibility: hidden;
+  width: 120px;
+  background-color: #161616;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -220%;
+  left: 68%;
+  margin-left: -60px;
+}
+
+.c5::after {
+  content: '';
+  position: absolute;
+  bottom: -38%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #161616 transparent;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.c2 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 svg {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+}
+
+.c2:hover .c4 {
+  visibility: visible;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+>
+  <div
+    className="c1 sc-gtssRu c1 css-text-901oao"
+    dir="auto"
+  >
+    Hello World
+    <div
+      className="c2 sc-jSFkmK c2 css-view-1dbjc4n r-display-xoduu5"
+    >
+      <svg
+        aria-hidden="true"
+        className="c3"
+        fill="none"
+        focusable="false"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx={12}
+          cy={12}
+          r={10}
+        />
+        <line
+          x1={12}
+          x2={12}
+          y1={8}
+          y2={12}
+        />
+        <line
+          x1={12}
+          x2={12.01}
+          y1={16}
+          y2={16}
+        />
+      </svg>
+      <span
+        className="c4 c5 c4 c5 css-text-901oao css-textHasAncestor-16my406"
+        dir="auto"
+      >
+        Helo FormGroup
+      </span>
+    </div>
+  </div>
+  <input
+    active={false}
+    isInvalid={true}
+    name="FormGroup"
+    onBlur={[Function]}
+  />
+  <div
+    className="c6 sc-hKFyIo c6 css-text-901oao"
+    dir="auto"
+  >
+    Error message
+  </div>
+</div>
+`;
+
+exports[`FormGroup Test should render the FormGroup with placeholder 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.c0 Tag {
+  margin: 8px 0 4px 0;
+}
+
+.c1 {
+  font-size: .75rem;
+  color: #DA1E28;
+  margin-top: 8px;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+>
+  <input
+    active={false}
+    isInvalid={true}
+    name="FormGroup"
+    onBlur={[Function]}
+    placeholder="Hello World"
+  />
+  <div
+    className="c1 sc-hKFyIo c1 css-text-901oao"
+    dir="auto"
+  >
+    Error message
+  </div>
+</div>
+`;
+
+exports[`FormGroup Test should render the FormGroup with width 100% 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.c0 Tag {
+  margin: 8px 0 4px 0;
+}
+
+.c1 {
+  font-size: .75rem;
+  color: #DA1E28;
+  margin-top: 8px;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+>
+  <input
+    active={false}
+    isInvalid={true}
+    name="FormGroup"
+    onBlur={[Function]}
+  />
+  <div
+    className="c1 sc-hKFyIo c1 css-text-901oao"
+    dir="auto"
+  >
+    Error message
+  </div>
+</div>
+`;

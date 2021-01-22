@@ -5,18 +5,12 @@ import {
   StatusBar,
   StyleSheet,
   Text,
-  TextInputComponent,
   View,
 } from 'react-native'
-import Button from 'components/src/components/Button'
-
 
 import { AppHeader } from './AppHeader'
 
 export function App() {
-  function submit(){
-    console.log('agora foi')
-  }
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -31,15 +25,6 @@ export function App() {
               <Text style={styles.footer}>Engine: Hermes</Text>
             </View>
           )}
-          <View style={styles.body}>
-           
-            {/* <form>
-              <input name="email"/>
-              <input name="password" />
-            </form> */}
-            <Button text="Button" onPress={submit} appearance="primary"/>
-            
-          </View>
         </ScrollView>
       </SafeAreaView>
     </>

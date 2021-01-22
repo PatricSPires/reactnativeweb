@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormGroup > Style should render the FormGroup with some styles 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.c0 Tag {
+  margin: 8px 0 4px 0;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+>
+  <input
+    isInvalid={false}
+    name="input"
+    onBlur={[Function]}
+  />
+</div>
+`;
+
+exports[`FormGroupWrapper > Style should render the FormGroupWrapper with margin bottom 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.c0 Tag {
+  margin: 8px 0 4px 0;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+/>
+`;
+
+exports[`FormGroupWrapper > Style should render the FormGroupWrapper with width 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  margin-bottom: 16px;
+}
+
+.c0 Tag {
+  margin: 8px 0 4px 0;
+}
+
+<div
+  className="c0 sc-bdnylx c0 css-view-1dbjc4n"
+/>
+`;
