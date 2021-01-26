@@ -10,7 +10,7 @@ const Switch = ({ label, checked, justifyContent, onPress }: SwitchProps) => {
       onPress={onPress}
       activeOpacity={1}
     >
-      <Box checked={checked} onPress={onPress} activeOpacity={1}>
+      <Box checked={checked} activeOpacity={1}>
         <Check checked={checked} activeOpacity={1} />
       </Box>
       <Label>{label}</Label>
