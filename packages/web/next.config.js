@@ -1,9 +1,12 @@
 /* eslint-disable no-param-reassign,@typescript-eslint/no-var-requires */
 const path = require('path')
 
-const withTM = require('next-transpile-modules')(['commons'], {
-  resolveSymlinks: true,
-})
+const withTM = require('next-transpile-modules')(
+  ['commons', 'styled-components'],
+  {
+    resolveSymlinks: true,
+  },
+)
 
 module.exports = withTM({
   webpack(config) {
