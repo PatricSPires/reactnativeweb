@@ -1,25 +1,21 @@
 import React from 'react'
-import { Text } from 'react-native'
 import { SwitchProps } from './types'
-import { Container, Wrapper } from './styles'
 
-const Switch = ({ checked, size, disabled, onPress }: SwitchProps) => (
-  <Container
-    activeOpacity={0}
-    size={size}
-    checked={checked}
-    disabled={disabled}
-    onPress={onPress}
-  >
+import { Wrapper, Box, Label, Check } from './styles'
+
+const Switch = ({ label, checked, justifyContent, onPress }: SwitchProps) => {
+  return (
     <Wrapper
-      checked={checked}
-      size={size}
-      disabled={disabled}
+      justifyContent={justifyContent}
       onPress={onPress}
+      activeOpacity={1}
     >
-      <Text />
+      <Box checked={checked} onPress={onPress} activeOpacity={1}>
+        <Check checked={checked} activeOpacity={1} />
+      </Box>
+      <Label>{label}</Label>
     </Wrapper>
-  </Container>
-)
+  )
+}
 
 export default Switch

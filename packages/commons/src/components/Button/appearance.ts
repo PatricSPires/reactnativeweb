@@ -1,18 +1,45 @@
 import { css } from 'styled-components'
-import { Platform } from 'react-native'
-// import theme from '../../../commons/styles/theme';
+import theme from '../../styles/theme'
 
 export const buttonAppearances = {
+  disabled: () => css`
+    background-color: ${theme.colors.primary_subtle_border};
+  `,
   primary: () => css`
-    background-color: ${Platform.OS === 'web' ? 'green' : 'fuchsia'};
+    background-color: ${theme.colors.primary_color_light};
+  `,
+  secondary: () => css`
+    background-color: ${theme.colors.high_contrast_border};
+  `,
+  tertiary: () => css`
+    background-color: transparent;
+    border: 1px solid ${theme.colors.primary_color_light};
+  `,
+  ghost: () => css`
+    background-color: transparent;
   `,
   danger: () => css`
-    background-color: red;
+    background-color: ${theme.supportColors.error};
   `,
 }
 
 export const textAppearances = {
+  disabled: () => css`
+    color: ${theme.colors.medium_contrast_border};
+  `,
   primary: () => css`
-    color: #fff;
+    color: ${theme.colors.primary_background};
+  `,
+  secondary: () => css`
+    color: ${theme.colors.primary_background};
+  `,
+  tertiary: () => css`
+    color: ${theme.colors.primary_color_light};
+  `,
+  ghost: () => css`
+    color: ${theme.colors.primary_color_light};
+  `,
+  danger: () => css`
+    color: ${theme.colors.primary_background};
   `,
 }

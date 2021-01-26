@@ -1,10 +1,12 @@
-import React from 'react'
-import { ThemeType } from '../../styles/types'
-
 export type RadioButtonProps = {
-  onPress?: () => void
-  children?: React.ReactNode
+  label: string
   checked?: boolean
-  disabled: boolean
-  theme?: ThemeType
+  justifyContent?:
+    | 'flex-start'
+    | 'center'
+    | 'flex-end'
+    | 'space-around'
+    | 'space-between'
+    | 'space-evenly'
+  onPress?: () => void
 }

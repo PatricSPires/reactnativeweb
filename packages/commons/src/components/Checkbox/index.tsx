@@ -1,30 +1,27 @@
 import React from 'react'
-import { StyleSheet, View } from 'react-native'
-import {
-  CheckBoxCheck,
-  CheckBoxText,
-  CheckBoxWrapper,
-  Container,
-} from './styles'
-import { CheckboxProps } from './types'
+import Icon from 'react-native-vector-icons/Feather'
+import { CheckBoxProps } from './types'
 
-const Checkbox = ({ children, checked, onPress, disabled }: CheckboxProps) => (
-  <Container accessibilityRole="checkbox" disabled={disabled} onPress={onPress}>
-    <View style={styles.wrapper}>
-      <CheckBoxWrapper checked={checked} disabled={disabled}>
-        <CheckBoxCheck checked={checked} disabled={disabled} />
-      </CheckBoxWrapper>
-      {children && <CheckBoxText disabled={disabled}>{children}</CheckBoxText>}
-    </View>
-  </Container>
-)
+import { Wrapper, Box, Label } from './styles'
 
-const styles = StyleSheet.create({
-  wrapper: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-})
+const CheckBox: React.FC<CheckBoxProps> = ({
+  label,
+  checked,
+  justifyContent,
+  onPress,
+}) => {
+  return (
+    <Wrapper
+      justifyContent={justifyContent}
+      onPress={onPress}
+      activeOpacity={1}
+    >
+      <Box checked={false} onPress={onPress} activeOpacity={1}>
+        {checked ? <Icon size={12} name="check" color="#000" /> : null}
+      </Box>
+      <Label>{label}</Label>
+    </Wrapper>
+  )
+}
 
-export default Checkbox
+export default CheckBox

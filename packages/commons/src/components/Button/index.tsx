@@ -1,6 +1,8 @@
+/* eslint-disable react/require-default-props */
 import React from 'react'
+import { Platform, TouchableOpacity } from 'react-native'
 import { ButtonProps } from './types'
-import { ButtonComponent, TextComponent } from './styles'
+import { ButtonWrapper, ButtonText } from './styles'
 
 const Button = ({
   onPress,
@@ -12,33 +14,41 @@ const Button = ({
   icon,
   alignIcon,
   alignItems,
+  className,
+  as,
+  ...props
 }: ButtonProps) => {
   return (
-    <ButtonComponent
+    <ButtonWrapper
       appearance={appearance}
       onPress={onPress}
+      onClick={onPress}
       activeOpacity={1}
       width={width}
       marginBottom={marginBottom}
       alignIcon={alignIcon}
       alignItems={alignItems}
+      className={className}
+      as={Platform.OS === 'web' ? 'button' : TouchableOpacity}
+      {...props}
       accessibilityRole="button"
     >
       {!!text && (
         <>
-          <TextComponent appearance={appearance} alignText={alignText}>
+          <ButtonText appearance={appearance} alignText={alignText}>
             {text}
-          </TextComponent>
+          </ButtonText>
           {icon}
         </>
       )}
-    </ButtonComponent>
+    </ButtonWrapper>
   )
 }
 
 Button.defaultProps = {
   appearance: 'primary',
   marginBottom: 3,
+  as: TouchableOpacity,
 }
 
 export default Button

@@ -1,59 +1,39 @@
-import styled, { css } from 'styled-components'
-import { TouchableOpacity, TouchableWithoutFeedback } from 'react-native'
+import styled from 'styled-components/native'
 import { SwitchProps } from './types'
-import theme from '../../styles/theme'
 
-export const Container = styled(TouchableOpacity)`
-  position: relative;
-  display: inline-block;
-  width: ${(props: SwitchProps) => (props.size === 'small' ? 32 : 52)}px;
-  height: ${(props: SwitchProps) => (props.size === 'small' ? 16 : 24)}px;
-  border-radius: ${(props: SwitchProps) =>
-    props.size === 'small' ? 100 : 12}px;
-  background-color: ${theme.colors.medium_contrast_border};
-  outline: 2px solid;
-  outline-color: transparent;
-
-  ${(props: SwitchProps) =>
-    props.checked &&
-    css`
-      background-color: ${theme.supportColors.success};
-
-      &:focus {
-        outline-color: ${theme.supportColors.information};
-      }
-    `}
-
-  ${(props: SwitchProps) =>
-    props.disabled &&
-    css`
-      background-color: ${theme.colors.primary_subtle_border};
-      outline-color: transparent;
-    `}
+export const Wrapper = styled.TouchableOpacity`
+  flex-direction: row;
+  justify-content: ${({ justifyContent }: SwitchProps) =>
+    justifyContent || 'center'};
+  width: 100%;
+  margin: 8px 0;
 `
 
-export const Wrapper = styled(TouchableWithoutFeedback)`
-  position: absolute;
-  width: ${(props: SwitchProps) => (props.size === 'small' ? 10 : 18)}px;
-  height: ${(props: SwitchProps) => (props.size === 'small' ? 10 : 18)}px;
-  border-radius: 50%;
-  background-color: #fff;
-  top: 3px;
-  left: 3px;
-  -webkit-transition: left 0.25s ease;
-  transition: left 0.25s ease;
+export const Box = styled.TouchableOpacity<SwitchProps>`
+  width: 48px;
+  height: 24px;
+  border-width: 1px;
+  border-radius: 50px;
+  border-color: ${({ checked }: SwitchProps) =>
+    checked ? '#24a148' : '#8d8d8d'};
+  background-color: ${({ checked }: SwitchProps) =>
+    checked ? '#24a148' : '#8d8d8d'};
+  justify-content: ${({ checked }: SwitchProps) =>
+    checked ? 'flex-end' : 'flex-start'};
+  flex-direction: row;
+  align-items: center;
+  padding: 0 3px;
+`
 
-  ${({ checked, size }: SwitchProps) =>
-    checked &&
-    `
-    -webkit-transition: left 0.25s ease;
-    transition: left 0.25s ease;
-    left: ${size === 'small' ? 19 : 31}px;
-  `}
+export const Check = styled.TouchableOpacity<SwitchProps>`
+  width: 18px;
+  height: 18px;
+  border-radius: 50px;
+  background-color: ${({ checked }: SwitchProps) =>
+    checked ? '#fff' : '#e0e0e0'};
+`
 
-  ${({ disabled }) =>
-    disabled &&
-    `
-    background-color: ${theme.colors.medium_contrast_border};
-  `}
+export const Label = styled.Text`
+  color: #000;
+  margin-left: 8px;
 `

@@ -1,67 +1,28 @@
-import React, { useState } from 'react'
-import { View } from 'react-native'
-import { EyeOff } from '@styled-icons/feather/EyeOff'
-import { Eye } from '@styled-icons/feather/Eye'
-import { InputProps } from './types'
-import {
-  TextInput,
-  HelperText,
-  Wrapper,
-  InputWrapper,
-  Icon,
-  PasswordIconWrapper,
-} from './styles'
+import React from 'react';
+import {Label, TextInputView, TextInputComponent, HelperText} from './styles';
+import {View} from 'react-native';
+import {InputProps} from './types';
 
 const Input = ({
-  placeholder,
-  value,
-  onChange,
-  disabled,
-  isInvalid,
+  label,
   helperText,
-  iconPosition,
-  icon,
-  iconColor,
+  isInvalid,
+  placeholder,
   passwordField,
 }: InputProps) => {
-  const [showPassword, setShowPassword] = useState(passwordField)
-
-  function changePasswordView() {
-    setShowPassword(!showPassword)
-  }
-
   return (
-    <Wrapper testID="wrapper">
-      {!!helperText && <HelperText>{helperText}</HelperText>}
-      <InputWrapper isInvalid={isInvalid}>
-        <TextInput
+    <View>
+      {label && <Label>{label}</Label>}
+      {helperText && <HelperText>{helperText}</HelperText>}
+      <TextInputView isInvalid={isInvalid}>
+        <TextInputComponent
+          selectionColor="#161616"
           placeholder={placeholder}
-          value={value}
-          onChange={onChange}
-          disabled={disabled}
-          iconPosition={iconPosition}
-          secureTextEntry={showPassword}
+          secureTextEntry={passwordField}
         />
-        {isInvalid && !passwordField && (
-          <Icon iconColor={iconColor} iconPosition={iconPosition}>
-            {icon}
-          </Icon>
-        )}
-        {passwordField && (
-          <PasswordIconWrapper
-            testID="passwordIconWrapper"
-            onPress={() => changePasswordView()}
-          >
-            <View>{showPassword ? <EyeOff /> : <Eye />}</View>
-          </PasswordIconWrapper>
-        )}
-      </InputWrapper>
-    </Wrapper>
-  )
-}
+      </TextInputView>
+    </View>
+  );
+};
 
-Input.defaultProps = {
-  passwordField: false,
-}
-
-export default Input
+export default Input;

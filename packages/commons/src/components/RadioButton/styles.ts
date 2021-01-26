@@ -1,75 +1,35 @@
-import styled from 'styled-components'
-import { TouchableWithoutFeedback, View, Text } from 'react-native'
-import theme from '../../styles/theme'
+import styled from 'styled-components/native'
 import { RadioButtonProps } from './types'
 
-export const RadioButtonWrapper = styled(View)`
-  width: 18px;
-  height: 18px;
-  border: 2px solid;
-  border-color: ${theme.colors.high_contrast_border};
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  ${({ checked, disabled }: RadioButtonProps) => {
-    if (checked === false && disabled) {
-      return `
-        border-color: ${theme.colors.primary_subtle_border};
-      `
-    }
-    return ``
-  }}
-`
-
-export const RadioButtonCheck = styled(View)`
-  width: 8px;
-  height: 8px;
-  border-radius: 100%;
-
-  ${({ checked, disabled }: RadioButtonProps) => {
-    if (checked && checked === true && !disabled) {
-      return `
-        background-color: ${theme.colors.high_contrast_border};
-      `
-    }
-
-    if (checked && checked === true && disabled && disabled === true) {
-      return `
-        background-color: ${theme.colors.high_contrast_border};
-      `
-    }
-    return ``
-  }}
-`
-
-export const RadioButtonText = styled(Text)`
-  margin-left: 8px;
-  color: ${(props: RadioButtonProps) =>
-    props.disabled && props.disabled === true
-      ? theme.colors.primary_subtle_border
-      : theme.colors.high_contrast_border};
-`
-
-export const Container = styled(TouchableWithoutFeedback)`
-  display: flex;
+export const Wrapper = styled.TouchableOpacity`
   flex-direction: row;
+  justify-content: ${({ justifyContent }: RadioButtonProps) =>
+    justifyContent || 'center'};
+  width: 100%;
+  margin: 8px 0;
+`
+
+export const Box = styled.TouchableOpacity<RadioButtonProps>`
+  width: 20px;
+  height: 20px;
+  border-width: 1px;
+  border-radius: 50px;
+  border-color: #000;
+  background-color: transparent;
   justify-content: center;
   align-items: center;
-  cursor: ${(props: RadioButtonProps) =>
-    props.disabled && props.disabled === true ? 'not-allowed' : 'pointer'};
+  padding: 2px;
+`
 
-  &:focus ${RadioButtonWrapper} {
-    border-color: ${theme.supportColors.information};
-    box-shadow: 0px 0px 0px 1px ${theme.supportColors.information};
-    ${({ checked, disabled }: RadioButtonProps) => {
-      if (checked === true && disabled === false) {
-        return `
-          box-shadow: 0px 0px 0px 1px ${theme.supportColors.information};
-        `
-      }
-      return ``
-    }}
-  }
+export const Check = styled.TouchableOpacity<RadioButtonProps>`
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  background-color: ${({ checked }: RadioButtonProps) =>
+    checked ? '#000' : 'transparent'};
+`
+
+export const Label = styled.Text`
+  color: #000;
+  margin-left: 8px;
 `

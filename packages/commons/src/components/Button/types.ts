@@ -1,11 +1,9 @@
-import { ThemeType, appearanceOptions } from '../../styles/types'
+import { AppearanceOptions } from '../../styles/types'
 
 export type ButtonProps = {
+  onPress: () => void
+  appearance?: AppearanceOptions
   text?: string
-  onPress?: () => void
-  theme?: ThemeType
-  appearance?: appearanceOptions
-  activeOpacity?: number
   alignText?: 'left' | 'center' | 'right'
   marginBottom?: 1 | 2 | 3 | 4 | 5 | 6 | 7
   width?: string
@@ -15,7 +13,20 @@ export type ButtonProps = {
   className?: string
 }
 
-export type TextProps = {
-  appearance?: appearanceOptions
-  alignText?: 'left' | 'center' | 'right'
+export type ButtonWrapperProps = Pick<
+  ButtonProps,
+  | 'appearance'
+  | 'onPress'
+  | 'onPress'
+  | 'marginBottom'
+  | 'width'
+  | 'alignIcon'
+  | 'alignItems'
+  | 'className'
+> & {
+  onClick: () => void
+  activeOpacity: number
+  accessibilityRole: string
 }
+
+export type ButtonTextProps = Pick<ButtonProps, 'alignText' | 'appearance'>

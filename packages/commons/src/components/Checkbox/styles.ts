@@ -1,67 +1,28 @@
-import { Text, TouchableWithoutFeedback, View } from 'react-native'
 import styled from 'styled-components/native'
-import theme from '../../styles/theme'
-import { CheckboxProps } from './types'
+import { TouchableOpacity, Text } from 'react-native'
+import { BoxProps, CheckBoxProps } from './types'
 
-export const CheckBoxWrapper = styled(View)<CheckboxProps>`
-  width: 15px;
-  height: 15px;
-  border: 2px solid;
-  border-color: ${theme.colors.high_contrast_border};
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  img {
-    width: 15px;
-    height: 15px;
-  }
-
-  ${({ checked, disabled }: CheckboxProps) => {
-    if (checked === true && disabled === false) {
-      return `
-        background-color: ${theme.colors.high_contrast_border};
-      `
-    }
-
-    if (checked === false && disabled === true) {
-      return `
-        border-color: ${theme.colors.primary_subtle_border};
-        background-color: transparent;
-      `
-    }
-    return ``
-  }}
-`
-
-export const CheckBoxCheck = styled(View)<CheckboxProps>`
-  width: 15px;
-  height: 15px;
-  background-color: transparent;
-  border-radius: 2px;
-
-  ${({ checked, disabled }: CheckboxProps) => {
-    if (checked === true && disabled === true) {
-      return `
-        background-color: ${theme.colors.high_contrast_border};
-      `
-    }
-    return ``
-  }}
-`
-
-export const CheckBoxText = styled(Text)`
-  margin-left: 8px;
-  color: ${(props: CheckboxProps) =>
-    props.disabled
-      ? theme.colors.primary_subtle_border
-      : theme.colors.high_contrast_border};
-`
-
-export const Container = styled(TouchableWithoutFeedback)`
-  display: flex;
+export const Wrapper = styled(TouchableOpacity)`
   flex-direction: row;
+  justify-content: ${({ justifyContent }: CheckBoxProps) =>
+    justifyContent || 'center'};
+  width: 100%;
+  margin: 8px 0;
+`
+
+export const Box = styled(TouchableOpacity)<BoxProps>`
+  width: 20px;
+  height: 20px;
+  border-width: 1px;
+  border-radius: 3px;
+  border-color: #fff;
+  background-color: ${({ checked }: BoxProps) =>
+    checked ? '#161616' : 'transparent'};
   justify-content: center;
   align-items: center;
+`
+
+export const Label = styled(Text)`
+  color: #fff;
+  margin-left: 8px;
 `

@@ -1,9 +1,12 @@
-import { ThemeType } from '../../styles/types'
-
 export type SwitchProps = {
+  label?: string
   checked?: boolean
-  disabled?: boolean
+  justifyContent?:
+    | 'flex-start'
+    | 'center'
+    | 'flex-end'
+    | 'space-around'
+    | 'space-between'
+    | 'space-evenly'
   onPress?: () => void
-  theme?: ThemeType
-  size?: string
 }

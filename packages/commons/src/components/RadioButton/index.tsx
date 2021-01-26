@@ -1,48 +1,25 @@
 import React from 'react'
-import { StyleSheet, View } from 'react-native'
 import { RadioButtonProps } from './types'
+import { Wrapper, Box, Label, Check } from './styles'
 
-import {
-  Container,
-  RadioButtonWrapper,
-  RadioButtonCheck,
-  RadioButtonText,
-} from './styles'
-
-const RadioButton = ({
-  children,
+const RedioButton = ({
+  label,
   checked,
+  justifyContent,
   onPress,
-  disabled,
-}: RadioButtonProps) => (
-  <Container
-    accessibilityRole="radio"
-    disabled={disabled}
-    checked={checked}
-    onPress={onPress}
-  >
-    <View style={styles.wrapper}>
-      <RadioButtonWrapper checked={checked} disabled={disabled}>
-        <RadioButtonCheck checked={checked} disabled={disabled} />
-      </RadioButtonWrapper>
-      {children && (
-        <RadioButtonText disabled={disabled}>{children}</RadioButtonText>
-      )}
-    </View>
-  </Container>
-)
-
-RadioButton.defaultProps = {
-  disabled: false,
-  checked: false,
+}: RadioButtonProps) => {
+  return (
+    <Wrapper
+      justifyContent={justifyContent}
+      onPress={onPress}
+      activeOpacity={1}
+    >
+      <Box checked={checked} onPress={onPress} activeOpacity={1}>
+        <Check checked={checked} onPress={onPress} />
+      </Box>
+      <Label>{label}</Label>
+    </Wrapper>
+  )
 }
 
-const styles = StyleSheet.create({
-  wrapper: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-})
-
-export default RadioButton
+export default RedioButton

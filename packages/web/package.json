@@ -1,5 +1,5 @@
 {
-  "name": "web-nextjs",
+  "name": "web",
   "version": "0.0.1",
   "scripts": {
     "dev": "next",
@@ -7,7 +7,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "components": "0.0.1",
+    "commons": "0.0.1",
     "next": "10.0.2",
     "next-transpile-modules": "4.1.0",
     "react": "17.0.1",
