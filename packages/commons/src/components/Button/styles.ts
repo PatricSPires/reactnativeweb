@@ -1,10 +1,10 @@
 import styled, { css } from 'styled-components'
-import { TouchableOpacity, Text } from 'react-native'
+import { TouchableOpacity, Text, Platform } from 'react-native'
 import { ButtonTextProps, ButtonWrapperProps } from './types'
 import { buttonAppearances, textAppearances } from './appearance'
 
 export const ButtonWrapper = styled(TouchableOpacity)<ButtonWrapperProps>`
-  ${({ appearance, alignIcon, alignItems }) => css`
+  ${({ appearance, alignIcon, alignItems }: ButtonWrapperProps) => css`
     display: flex;
     align-items: center;
     height: 48px;
@@ -14,12 +14,14 @@ export const ButtonWrapper = styled(TouchableOpacity)<ButtonWrapperProps>`
     padding: 16px;
     flex-direction: ${alignIcon === 'left' ? 'row-reverse' : 'row'};
     justify-content: ${alignItems === 'center' ? 'center' : 'space-between'};
+    border: none;
+    ${Platform.OS === 'web' && 'cursor: pointer'};
     ${!!appearance && buttonAppearances[appearance]()};
   `}
 `
 
 export const ButtonText = styled(Text)<ButtonTextProps>`
-  ${({ appearance }) => css`
+  ${({ appearance }: ButtonTextProps) => css`
     ${!!appearance && textAppearances[appearance]()};
   `}
 `

@@ -15,7 +15,6 @@ const Button = ({
   alignIcon,
   alignItems,
   className,
-  as,
   ...props
 }: ButtonProps) => {
   return (
@@ -48,7 +47,6 @@ const Button = ({
 Button.defaultProps = {
   appearance: 'primary',
   marginBottom: 3,
-  as: TouchableOpacity,
 }
 
 export default Button
