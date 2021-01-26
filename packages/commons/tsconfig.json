@@ -4,7 +4,8 @@
     "jsx": "preserve",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "noEmit": true,
-    "target": "ESNext"
+    "target": "ESNext",
+    "module": "CommonJS"
   },
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]

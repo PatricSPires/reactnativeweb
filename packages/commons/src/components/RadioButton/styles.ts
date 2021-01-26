@@ -1,4 +1,4 @@
-import styled from 'styled-components/native'
+import styled from 'styled-components'
 import { RadioButtonProps } from './types'
 
 export const Wrapper = styled.TouchableOpacity`

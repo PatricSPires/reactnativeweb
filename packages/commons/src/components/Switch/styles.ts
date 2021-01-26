@@ -1,7 +1,8 @@
-import styled from 'styled-components/native'
+import { Text, TouchableOpacity } from 'react-native'
+import styled from 'styled-components'
 import { SwitchProps } from './types'
 
-export const Wrapper = styled.TouchableOpacity`
+export const Wrapper = styled(TouchableOpacity)`
   flex-direction: row;
   justify-content: ${({ justifyContent }: SwitchProps) =>
     justifyContent || 'center'};
@@ -9,7 +10,7 @@ export const Wrapper = styled.TouchableOpacity`
   margin: 8px 0;
 `
 
-export const Box = styled.TouchableOpacity<SwitchProps>`
+export const Box = styled(TouchableOpacity)<SwitchProps>`
   width: 48px;
   height: 24px;
   border-width: 1px;
@@ -25,7 +26,7 @@ export const Box = styled.TouchableOpacity<SwitchProps>`
   padding: 0 3px;
 `
 
-export const Check = styled.TouchableOpacity<SwitchProps>`
+export const Check = styled(TouchableOpacity)<SwitchProps>`
   width: 18px;
   height: 18px;
   border-radius: 50px;
@@ -33,7 +34,7 @@ export const Check = styled.TouchableOpacity<SwitchProps>`
     checked ? '#fff' : '#e0e0e0'};
 `
 
-export const Label = styled.Text`
+export const Label = styled(Text)`
   color: #000;
   margin-left: 8px;
 `

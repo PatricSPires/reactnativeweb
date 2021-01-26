@@ -12,9 +12,14 @@ module.exports = withTM({
       'react-native$': 'react-native-web',
     }
     config.resolve.extensions = [
-      '.web.js',
       '.web.ts',
       '.web.tsx',
+      '.ts',
+      '.tsx',
+      '.web.js',
+      '.web.jsx',
+      '.js',
+      '.jsx',
       ...config.resolve.extensions,
     ]
     config.module.rules.push({
