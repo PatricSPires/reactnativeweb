@@ -1,12 +1,13 @@
 import styled from 'styled-components/native'
 import { SwitchProps } from './types'
+import theme from '../../styles/theme'
 
 export const Wrapper = styled.TouchableOpacity`
   flex-direction: row;
   justify-content: ${({ justifyContent }: SwitchProps) =>
     justifyContent || 'center'};
   width: 100%;
-  margin: 8px 0;
+  margin: ${theme.spacings[1]} 0;
   align-items: center;
 `
 
@@ -16,9 +17,13 @@ export const Box = styled.View<SwitchProps>`
   border-width: 1px;
   border-radius: 50px;
   border-color: ${({ checked }: SwitchProps) =>
-    checked ? '#24a148' : '#8d8d8d'};
+    checked
+      ? theme.supportColors.success
+      : theme.colors.medium_contrast_border};
   background-color: ${({ checked }: SwitchProps) =>
-    checked ? '#24a148' : '#8d8d8d'};
+    checked
+      ? theme.supportColors.success
+      : theme.colors.medium_contrast_border};
   justify-content: ${({ checked }: SwitchProps) =>
     checked ? 'flex-end' : 'flex-start'};
   flex-direction: row;
@@ -32,11 +37,13 @@ export const Check = styled.View<SwitchProps>`
   height: 18px;
   border-radius: 50px;
   background-color: ${({ checked }: SwitchProps) =>
-    checked ? '#fff' : '#e0e0e0'};
+    checked
+      ? theme.colors.primary_background
+      : theme.colors.primary_subtle_border};
   z-index: -1;
 `
 
 export const Label = styled.Text`
-  color: #000;
-  margin-left: 8px;
+  color: ${theme.colors.high_contrast_border};
+  margin-left: ${theme.spacings[1]};
 `

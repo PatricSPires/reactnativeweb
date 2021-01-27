@@ -37,7 +37,7 @@ export const TooltipWrapper = styled(View)`
   svg {
     width: 16px;
     height: 16px;
-    margin-left: 10px;
+    margin-left: ${theme.spacings[1]};
   }
 
   :hover ${TooltipHint} {

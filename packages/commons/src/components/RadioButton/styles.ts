@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import styled from 'styled-components/native'
+import theme from '../../styles/theme'
 import { RadioButtonProps } from './types'
 
 export const Wrapper = styled.TouchableOpacity`
@@ -6,7 +7,7 @@ export const Wrapper = styled.TouchableOpacity`
   justify-content: ${({ justifyContent }: RadioButtonProps) =>
     justifyContent || 'center'};
   width: 100%;
-  margin: 8px 0;
+  margin: ${theme.spacings[1]} 0;
 `
 
 export const Box = styled.TouchableOpacity<RadioButtonProps>`
@@ -14,11 +15,11 @@ export const Box = styled.TouchableOpacity<RadioButtonProps>`
   height: 20px;
   border-width: 1px;
   border-radius: 50px;
-  border-color: #000;
+  border-color: ${theme.colors.high_contrast_border};
   background-color: transparent;
   justify-content: center;
   align-items: center;
-  padding: 2px;
+  padding: ${theme.spacings[1]};
 `
 
 export const Check = styled.TouchableOpacity<RadioButtonProps>`
@@ -26,10 +27,10 @@ export const Check = styled.TouchableOpacity<RadioButtonProps>`
   height: 12px;
   border-radius: 50px;
   background-color: ${({ checked }: RadioButtonProps) =>
-    checked ? '#000' : 'transparent'};
+    checked ? theme.colors.high_contrast_border : 'transparent'};
 `
 
 export const Label = styled.Text`
-  color: #000;
-  margin-left: 8px;
+  color: ${theme.colors.high_contrast_border};
+  margin-left: ${theme.spacings[1]};
 `

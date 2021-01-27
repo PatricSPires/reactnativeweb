@@ -16,8 +16,6 @@ export function App() {
       <SafeAreaView>
         <ScrollView contentInsetAdjustmentBehavior="automatic">
           <AppHeader />
-
-          <Title>olá!</Title>
           <Switch
             label="Testing"
             checked={checked}

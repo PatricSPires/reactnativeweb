@@ -1,6 +1,7 @@
 import { Text, TouchableOpacity } from 'react-native'
 import styled from 'styled-components'
 import { BoxProps, CheckBoxProps } from './types'
+import theme from '../../styles/theme'
 
 export const Wrapper = styled(TouchableOpacity)`
   flex-direction: row;
@@ -15,14 +16,14 @@ export const Box = styled(TouchableOpacity)<BoxProps>`
   height: 20px;
   border-width: 1px;
   border-radius: 3px;
-  border-color: #fff;
+  border-color: ${theme.colors.primary_background};
   background-color: ${({ checked }: BoxProps) =>
-    checked ? '#161616' : 'transparent'};
+    checked ? theme.colors.high_contrast_border : 'transparent'};
   justify-content: center;
   align-items: center;
 `
 
 export const Label = styled(Text)`
-  color: #fff;
+  color: ${theme.colors.primary_background};
   margin-left: 8px;
 `
