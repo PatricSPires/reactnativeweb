@@ -3,7 +3,6 @@ import { SafeAreaView, ScrollView, StatusBar } from 'react-native'
 import { ThemeProvider } from 'styled-components/native'
 import { AppHeader } from './AppHeader'
 import Switch from './components/Switch'
-import Button from './components/Button'
 import theme from './styles/customThemes/light'
 
 export function App() {
@@ -19,11 +18,6 @@ export function App() {
             label="Testing"
             checked={checked}
             onPress={() => setChecked(!checked)}
-          />
-          <Button
-            appearance="danger"
-            onPress={() => console.log('button')}
-            text="Testing"
           />
         </ScrollView>
       </SafeAreaView>
