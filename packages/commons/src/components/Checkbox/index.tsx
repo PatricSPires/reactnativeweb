@@ -15,6 +15,7 @@ const CheckBox: React.FC<CheckBoxProps> = ({
       justifyContent={justifyContent}
       onPress={onPress}
       activeOpacity={1}
+      label={label}
     >
       <Box checked={false} onPress={onPress} activeOpacity={1}>
         {checked ? <Icon size={12} name="check" color="#000" /> : null}
