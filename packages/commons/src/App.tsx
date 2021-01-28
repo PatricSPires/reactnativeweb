@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import { SafeAreaView, ScrollView, StatusBar } from 'react-native'
-import { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from 'styled-components/native'
 import { AppHeader } from './AppHeader'
-import Title from './components/Title'
 import Switch from './components/Switch'
 import Button from './components/Button'
 import theme from './styles/customThemes/light'
@@ -22,7 +21,7 @@ export function App() {
             onPress={() => setChecked(!checked)}
           />
           <Button
-            appearance="secondary"
+            appearance="danger"
             onPress={() => console.log('button')}
             text="Testing"
           />

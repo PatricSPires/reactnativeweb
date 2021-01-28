@@ -1,6 +1,5 @@
 /* eslint-disable react/require-default-props */
 import React from 'react'
-import { Platform, TouchableOpacity } from 'react-native'
 import { ButtonProps } from './types'
 import { ButtonWrapper, ButtonText } from './styles'
 
@@ -28,7 +27,6 @@ const Button = ({
       alignIcon={alignIcon}
       alignItems={alignItems}
       className={className}
-      as={Platform.OS === 'web' ? 'button' : TouchableOpacity}
       {...props}
       accessibilityRole="button"
     >

@@ -7,6 +7,7 @@ const light: DefaultTheme = {
   title: 'light',
 
   colors: {
+    ...theme.colors,
     primary_container_background: white[100],
     medium_contrast_border: gray[700],
     primary_color_light: blue[700],
@@ -14,6 +15,7 @@ const light: DefaultTheme = {
     font_color: gray[500],
   },
   supportColors: {
+    ...theme.supportColors,
     information: white[500],
   },
 }

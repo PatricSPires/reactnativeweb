@@ -7,6 +7,7 @@ export type ColorsThemeType = {
   primary: string
   primary_color_light: string
   primary_color_dark: string
+  font_color: string
 }
 
 export type SupportColorsType = {
@@ -85,6 +86,7 @@ export type AppearanceOptions =
   | 'danger'
 
 export interface ThemeType {
+  title: string
   colors: ColorsThemeType
   supportColors: SupportColorsType
   highContrastColors: HighContrastType

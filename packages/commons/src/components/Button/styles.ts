@@ -1,27 +1,27 @@
-import styled, { css } from 'styled-components'
-import { TouchableOpacity, Text, Platform } from 'react-native'
-import { ButtonTextProps, ButtonWrapperProps } from './types'
-import { buttonAppearances, textAppearances } from './appearance'
+import styled, { css } from 'styled-components/native'
+import { ThemeProps } from '../../styles/customThemes/types'
 
-export const ButtonWrapper = styled(TouchableOpacity)<ButtonWrapperProps>`
-  ${({ appearance, alignIcon, alignItems }: ButtonWrapperProps) => css`
+import { ButtonTextProps, ButtonWrapperProps } from './types'
+import { getButtonAppearance, getTextAppearance } from './appearance'
+
+export const ButtonWrapper = styled.TouchableOpacity<
+  ButtonWrapperProps & ThemeProps
+>`
+  ${({ alignIcon, alignItems, theme }) => css`
     display: flex;
     align-items: center;
     height: 48px;
     max-width: 300px;
     min-width: 48px;
     width: 178px;
-    padding: 16px;
+    border: none;
+    padding: ${theme.spacings[2]};
     flex-direction: ${alignIcon === 'left' ? 'row-reverse' : 'row'};
     justify-content: ${alignItems === 'center' ? 'center' : 'space-between'};
-    border: none;
-    ${Platform.OS === 'web' && 'cursor: pointer'};
-    ${!!appearance && buttonAppearances[appearance]()};
+    ${getButtonAppearance}
   `}
 `
 
-export const ButtonText = styled(Text)<ButtonTextProps>`
-  ${({ appearance }: ButtonTextProps) => css`
-    ${!!appearance && textAppearances[appearance]()};
-  `}
+export const ButtonText = styled.Text<ButtonTextProps>`
+  ${getTextAppearance}
 `
