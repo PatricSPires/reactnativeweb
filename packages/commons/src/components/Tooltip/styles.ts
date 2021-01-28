@@ -1,12 +1,13 @@
 import styled from 'styled-components'
 import { Text, View } from 'react-native'
-import theme from '../../styles/theme'
+import { ThemeProps } from '../../styles/customThemes/types'
 
 export const TooltipHint = styled(Text)`
   visibility: hidden;
   width: 120px;
-  background-color: ${theme.colors.high_contrast_border};
-  color: ${theme.colors.primary_background};
+  background-color: ${({ theme }: ThemeProps) =>
+    theme.colors.high_contrast_border};
+  color: ${({ theme }: ThemeProps) => theme.colors.primary_background};
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
@@ -24,7 +25,8 @@ export const TooltipHint = styled(Text)`
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent ${theme.colors.high_contrast_border}
+    border-color: transparent transparent
+      ${({ theme }: ThemeProps) => theme.colors.high_contrast_border}
       transparent;
     transform: rotate(180deg);
   }
@@ -37,7 +39,7 @@ export const TooltipWrapper = styled(View)`
   svg {
     width: 16px;
     height: 16px;
-    margin-left: ${theme.spacings[1]};
+    margin-left: ${({ theme }: ThemeProps) => theme.spacings[1]};
   }
 
   :hover ${TooltipHint} {

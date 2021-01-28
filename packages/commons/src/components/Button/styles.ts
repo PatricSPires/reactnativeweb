@@ -7,7 +7,7 @@ import { getButtonAppearance, getTextAppearance } from './appearance'
 export const ButtonWrapper = styled.TouchableOpacity<
   ButtonWrapperProps & ThemeProps
 >`
-  ${({ alignIcon, alignItems, theme }) => css`
+  ${({ alignIcon, alignItems, theme }: ButtonWrapperProps & ThemeProps) => css`
     display: flex;
     align-items: center;
     height: 48px;

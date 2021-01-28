@@ -1,7 +1,7 @@
-import React from 'react';
-import {Label, TextInputView, TextInputComponent, HelperText} from './styles';
-import {View} from 'react-native';
-import {InputProps} from './types';
+import React from 'react'
+import { View } from 'react-native'
+import { Label, TextInputView, TextInputComponent, HelperText } from './styles'
+import { InputProps } from './types'
 
 const Input = ({
   label,
@@ -22,7 +22,7 @@ const Input = ({
         />
       </TextInputView>
     </View>
-  );
-};
+  )
+}
 
-export default Input;
+export default Input
