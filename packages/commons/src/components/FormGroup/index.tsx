@@ -33,7 +33,7 @@ const FormGroup = ({
       {!!label && (
         <Label>
           {label}
-          {!!labelHint && <Tooltip hint={labelHint} />}
+          {/* {!!labelHint && <Tooltip hint={labelHint} />} */}
         </Label>
       )}
       {!!helperText && <HelperText>{helperText}</HelperText>}
