@@ -17,6 +17,8 @@
     "xcode": "yarn workspace mobile xcode"
   },
   "devDependencies": {
+    "@babel/plugin-syntax-jsx": "^7.12.1",
+    "@babel/preset-react": "^7.12.10",
     "@react-native-community/eslint-config": "2.0.0",
     "@typescript-eslint/eslint-plugin": "4.8.1",
     "@typescript-eslint/parser": "4.8.1",
@@ -43,5 +45,6 @@
     "*.{js,jsx,ts,tsx,json,html,md,css}": [
       "prettier --write"
     ]
-  }
+  },
+  "dependencies": {}
 }
