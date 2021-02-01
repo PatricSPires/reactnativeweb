@@ -1,5 +1,5 @@
 import { DefaultTheme } from 'styled-components'
-import { gray, white, blue } from '../colors'
+import { gray, white } from '../colors'
 import theme from '../theme'
 
 const dark: DefaultTheme = {
@@ -7,6 +7,7 @@ const dark: DefaultTheme = {
   title: 'dark',
 
   colors: {
+    ...theme.colors,
     primary_container_background: gray[900],
     medium_contrast_border: gray[700],
     high_contrast_border: gray[500],
@@ -14,6 +15,7 @@ const dark: DefaultTheme = {
     primary_color_light: gray[500],
   },
   supportColors: {
+    ...theme.supportColors,
     information: white[500],
   },
 }

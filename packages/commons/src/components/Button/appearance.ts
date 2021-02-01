@@ -1,6 +1,12 @@
 import { css } from 'styled-components'
+import { ThemeType, AppearanceOptions } from '../../styles/types'
 
-export function getButtonAppearance({ theme, appearance }) {
+type AppearanceProps = {
+  theme: ThemeType
+  appearance: AppearanceOptions
+}
+
+export function getButtonAppearance({ theme, appearance }: AppearanceProps) {
   const options = {
     disabled: () => css`
       background-color: ${theme.colors.primary_subtle_border};
@@ -26,7 +32,7 @@ export function getButtonAppearance({ theme, appearance }) {
   return options[appearance]
 }
 
-export function getTextAppearance({ theme, appearance }) {
+export function getTextAppearance({ theme, appearance }: AppearanceProps) {
   const options = {
     disabled: () => css`
       color: ${theme.colors.medium_contrast_border};

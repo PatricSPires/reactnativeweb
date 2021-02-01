@@ -1,5 +1,5 @@
 import styled from 'styled-components/native'
-import { ThemeProps } from '../../styles/customThemes/types'
+import { ThemeProps } from '../../styles/types'
 import { SwitchProps } from './types'
 
 export const Wrapper = styled.TouchableOpacity`

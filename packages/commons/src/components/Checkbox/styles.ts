@@ -1,6 +1,6 @@
 import { Text, TouchableOpacity } from 'react-native'
 import styled from 'styled-components'
-import { ThemeProps } from '../../styles/customThemes/types'
+import { ThemeProps } from '../../styles/types'
 import { BoxProps, CheckBoxProps } from './types'
 
 export const Wrapper = styled(TouchableOpacity)`

@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components/native'
-import { ThemeProps } from '../../styles/customThemes/types'
+import { ThemeProps } from '../../styles/types'
 
 import { ButtonTextProps, ButtonWrapperProps } from './types'
 import { getButtonAppearance, getTextAppearance } from './appearance'

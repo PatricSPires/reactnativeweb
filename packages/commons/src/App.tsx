@@ -1,23 +1,28 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { SafeAreaView, ScrollView } from 'react-native'
 import { ThemeProvider } from 'styled-components/native'
-import Switch from './components/Switch'
-import theme from './styles/customThemes/light'
+import DefaultTheme from './styles/customThemes/light'
+import { ThemeType } from './styles/types'
 
-export function App() {
-  const [checked, setChecked] = useState(false)
+type AppProps = {
+  theme?: ThemeType
+  children: React.ReactNode
+}
 
+function App({ theme, children }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <SafeAreaView>
         <ScrollView contentInsetAdjustmentBehavior="automatic">
-          <Switch
-            label="Testing"
-            checked={checked}
-            onPress={() => setChecked(!checked)}
-          />
+          {children}
         </ScrollView>
       </SafeAreaView>
     </ThemeProvider>
   )
 }
+
+App.defaultProps = {
+  theme: DefaultTheme,
+}
+
+export default App

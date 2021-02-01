@@ -1,17 +1,19 @@
 import React from 'react'
-import { ThemeProvider } from 'styled-components/native'
+import { Text } from 'react-native'
+
+import App from '../../App'
 import theme from '../../styles/customThemes/dark'
 
 import Input from '../../components/Input'
 import Button from '../../components/Button'
 import FormGroup from '../../components/FormGroup'
-import Logo from '../../components/Logo'
+import Logo from '../../assets/images/logo.svg'
 
 import { Page, LoginWrapper } from './styles'
 
 const Login = () => {
   return (
-    <ThemeProvider theme={theme}>
+    <App theme={theme}>
       <Page>
         <LoginWrapper>
           <Logo />
@@ -38,7 +40,7 @@ const Login = () => {
           />
         </LoginWrapper>
       </Page>
-    </ThemeProvider>
+    </App>
   )
 }
 

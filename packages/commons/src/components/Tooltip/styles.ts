@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Text, View } from 'react-native'
-import { ThemeProps } from '../../styles/customThemes/types'
+import { ThemeProps } from '../../styles/types'
 
 export const TooltipHint = styled(Text)`
   visibility: hidden;

@@ -12,10 +12,13 @@
     "xcode": "xed ios"
   },
   "dependencies": {
+    "@types/react-router-native": "^5.1.0",
     "commons": "0.0.1",
+    "metro-config": "^0.65.0",
     "react": "17.0.1",
     "react-native": "0.63.3",
-    "react-native-vector-icons": "^8.0.0"
+    "react-native-vector-icons": "^8.0.0",
+    "react-router-native": "^5.2.0"
   },
   "devDependencies": {
     "@testing-library/jest-native": "3.4.3",

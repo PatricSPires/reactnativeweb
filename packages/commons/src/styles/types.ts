@@ -1,3 +1,5 @@
+import { DefaultTheme } from 'styled-components'
+
 export type ColorsThemeType = {
   primary_background: string
   primary_container_background: string
@@ -84,6 +86,10 @@ export type AppearanceOptions =
   | 'tertiary'
   | 'ghost'
   | 'danger'
+
+export type ThemeProps = {
+  theme: DefaultTheme
+}
 
 export interface ThemeType {
   title: string
